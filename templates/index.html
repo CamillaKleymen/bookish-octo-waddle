@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link rel = "stylesheet" href = "{{ url_for ('static', filename='css/homeuser.css') }}">
+    <meta charset="UTF-8">
+    <title>Main page</title>
 </head>
 <body>
-$END$
+<!--Hello from HTML file-->
+<!--{% for user in users %}}-->
+<!--{{ id }}<br>-->
+<!--{% endfor %}-->
+<!--{{ id }}-->
+<!--<h3>FORM</h3>-->
+<!--<form>-->
+<!--    <input type = "text" name = "info">-->
+<!--    <input type = "text" name = "info2">-->
+<!--    <button>SEND</button>-->
+<h3>Ask your question</h3>
+<form method = "post" action = "/add-question">
+    <input type = "text" name="question">
+    <textarea name = "main_text"></textarea>
+    <button>Publish</button>
+</form>
+<h1>Question</h1>
 </body>
 </html>

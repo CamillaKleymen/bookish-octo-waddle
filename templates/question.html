@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <link rel = "stylesheet" href = "{{ url_for ('static', filename='css/homeuser.css') }}">
+    <meta charset="UTF-8">
+    <title>question</title>
 </head>
 <body>
-$END$
+{{ exact_question["question"] }}
+{{ exact_question["main_text"] }}
+{{ exact_question["answer"] }}
 </body>
 </html>
